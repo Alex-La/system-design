@@ -34,12 +34,15 @@ Work the steps in order. Each produces an artifact the next step builds on.
 
    Take small, deliberate steps. **The rate of feedback is your speed limit.** Never take on a task that's too big — if a step can't be verified quickly, it's too big; split it.
 
-   For **each** step:
-   - Use `superpowers:brainstorming` to decide *how* to take the step.
-   - Use the [`adr`] skill (`/adr`) to log the decision you made — so the *why* is captured the moment it's fresh.
-   - Then fill in the matching `[TARGET]` values in the NFR document with what the step actually achieved.
+   For **each** step, run this loop in order:
 
-   Repeat until the spec is implemented. The discipline of this loop — decide, log, measure — is what keeps the system honest as it grows.
+   - **4.1 — Brainstorm the step.** Use `superpowers:brainstorming` to decide *how* to take the step.
+   - **4.2 — Log the decision.** Use the [`adr`] skill (`/adr`) to convert that brainstorm into a logged decision — so the *why* is captured the moment it's fresh.
+   - **4.3 — Implement test-first.** Implement the ADR under `superpowers:test-driven-development` — write the failing test (it *is* the measurable check for the NFR criterion) before the code, then make it pass.
+   - **4.4 — Get it reviewed.** Use `superpowers:requesting-code-review`, then `superpowers:receiving-code-review` to process the feedback rigorously before moving on.
+   - **4.5 — Measure.** Fill in the matching `[TARGET]` values in the NFR document with what the step actually achieved.
+
+   Repeat until the spec is implemented. The discipline of this loop — decide, log, test, review, measure — is what keeps the system honest as it grows.
 
 5. **Fill in the API contract.** Use the [`api`] skill (`/api`). Pin the public surface the feature now exposes so consumers, ADRs, NFRs, and tests can cite it by name.
 

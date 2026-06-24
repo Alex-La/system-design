@@ -13,8 +13,9 @@ implementation loop.
 ## Skills
 
 - **`workflow`** — the plugin's **methodology / manifest**. Run `/workflow` to drive the full flow:
-  brainstorm a spec → `prd` → `nfr` → implement step-by-step (logging each decision with `adr` and
-  filling NFR targets as you go) → `api` → `c4`. The order and the feedback loop are the point.
+  brainstorm a spec → `prd` → `nfr` → implement step-by-step (each step: `adr` → test-driven
+  implementation → code review → fill NFR targets) → `api` → `c4`. The order and the feedback loop
+  are the point.
 - **`prd`** — turn the current conversation into a **Product Requirements Document**: a problem→solution
   brief with an extensive numbered list of user stories plus implementation and testing decisions, saved
   as a design doc at `design/prd/<feature-slug>.md`. No interview — it synthesizes what you've already
@@ -55,8 +56,12 @@ of feedback is your speed limit**:
 1. **Brainstorm the feature and define a spec** — `superpowers:brainstorming`.
 2. **Convert the spec to a PRD** — `/prd`.
 3. **Define the NFRs from the spec** — `/nfr` (leave targets as `[TARGET]` for now).
-4. **Implement the spec, step by step — the critical path.** For each step: `superpowers:brainstorming`
-   to decide → `/adr` to log the decision → fill the matching `[TARGET]` in the NFR doc.
+4. **Implement the spec, step by step — the critical path.** For each step, run this loop:
+   1. **4.1** — `superpowers:brainstorming` to decide *how*.
+   2. **4.2** — `/adr` to log the decision.
+   3. **4.3** — `superpowers:test-driven-development` to implement the ADR test-first.
+   4. **4.4** — `superpowers:requesting-code-review` then `superpowers:receiving-code-review`.
+   5. **4.5** — fill the matching `[TARGET]` in the NFR doc.
 5. **Fill in the API contract** — `/api`.
 6. **Fill in the C4 model** — `/c4`.
 
