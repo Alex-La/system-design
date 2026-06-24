@@ -1,0 +1,13 @@
+%% Code-level (L4) diagram, embedded by the "api-client-classes" image view in workspace.dsl.
+%% Keep code-level diagrams as plain Mermaid (classDiagram / stateDiagram-v2) and reference them
+%% from `image <component> { mermaid code/<file>.mmd }`. Labels: prefer ASCII to stay parser-safe.
+classDiagram
+    class ApiClient {
+        +get(path) Response
+        +post(path, body) Response
+        -baseUrl
+    }
+    class HttpTransport {
+        +send(request) Response
+    }
+    ApiClient --> HttpTransport : uses

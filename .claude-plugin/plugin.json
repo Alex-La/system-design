@@ -1,0 +1,21 @@
+{
+  "name": "system-design",
+  "version": "0.1.0",
+  "description": "Software architecture & system-design tooling for Claude Code. A family of skills capturing a system as code across complementary genres: a workflow that ties them together, PRD product intent (what to build & why), C4 structure (what), ADR decisions (why), NFR quality attributes (how well), and API contracts (what it does / how you call it).",
+  "author": {
+    "name": "Alex-La"
+  },
+  "homepage": "https://github.com/Alex-La/system-design",
+  "repository": "https://github.com/Alex-La/system-design",
+  "license": "MIT",
+  "keywords": [
+    "architecture",
+    "system-design",
+    "c4",
+    "adr",
+    "nfr",
+    "api",
+    "prd",
+    "documentation"
+  ]
+}

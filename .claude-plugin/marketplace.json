@@ -1,0 +1,17 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "alex-la",
+  "description": "Claude Code plugins by Alex-La.",
+  "owner": {
+    "name": "Alex-La",
+    "url": "https://github.com/Alex-La"
+  },
+  "plugins": [
+    {
+      "name": "system-design",
+      "description": "Software architecture & system-design tooling. A workflow plus skills for architecture-as-code: PRD product intent, C4 modeling (Structurizr), ADR decision logs (MADR/log4brains), NFR quality attributes, and API contracts.",
+      "source": ".",
+      "category": "documentation"
+    }
+  ]
+}

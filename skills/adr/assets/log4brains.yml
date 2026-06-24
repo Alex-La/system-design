@@ -1,0 +1,27 @@
+# Copy this to `.log4brains.yml` at the project root (the folder you run log4brains from —
+# in a monorepo, the workspace root that holds package.json, NOT a package).
+# Docs: https://github.com/thomvaill/log4brains  •  MADR: https://adr.github.io/madr/
+
+project:
+  name: My Project # shown in the knowledge-base UI
+  tz: Europe/Paris # IANA timezone used for ADR dates (e.g. America/New_York, Europe/Belgrade)
+  adrFolder: ./design/adr # where the (global / repo-wide) ADRs live; must exist and contain template.md
+
+  # --- Monorepo only: one entry per package with its own decision log -------------------
+  # An ADR is attributed to a package by which `adrFolder` contains it, so keep each
+  # package's adrFolder inside its `path`. `path` must be an EXISTING directory.
+  #
+  # packages:
+  #   - name: billing # label shown in the UI and in `log4brains adr list`
+  #     path: ./packages/billing # the package's code (must exist)
+  #     adrFolder: ./packages/billing/design/adr
+  #   - name: web
+  #     path: ./apps/web
+  #     adrFolder: ./apps/web/design/adr
+
+  # --- Optional: enables "view source" / commit links in the generated site ------------
+  # Omit it and log4brains infers from git. `provider` is github | gitlab | bitbucket | generic.
+  #
+  # repository:
+  #   url: https://github.com/acme/my-project
+  #   provider: github
