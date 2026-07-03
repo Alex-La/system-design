@@ -1,6 +1,5 @@
 ---
 name: prd
-disable-model-invocation: true
 description: >-
   Turn the current conversation into a Product Requirements Document (PRD) — a problem→solution brief
   with an extensive numbered list of user stories plus implementation and testing decisions — saved as a

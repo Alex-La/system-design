@@ -84,9 +84,9 @@ Local development (editing this repo in place):
 /plugin install system-design@local-dev
 ```
 
-Then restart the session (or reload plugins). These skills are **invoked explicitly** — each carries
-`disable-model-invocation: true`, so the model won't auto-trigger them; you run them as slash commands
-(`/workflow`, `/prd`, `/c4`, `/adr`, `/nfr`, `/api`) when you decide the work calls for it. Use
+Then restart the session (or reload plugins). These skills can be invoked by the model when the work
+calls for them, or run explicitly as slash commands
+(`/workflow`, `/prd`, `/c4`, `/adr`, `/nfr`, `/api`). Use
 `/workflow` to drive the whole methodology end-to-end; `/prd` to turn the conversation into a
 requirements doc; `/c4` to design or document system architecture, draw C4 diagrams,
 or model a system; `/adr` to record an architecture or design decision, start a decision log, or settle

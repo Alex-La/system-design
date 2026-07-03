@@ -1,6 +1,5 @@
 ---
 name: nfr
-disable-model-invocation: true
 description: >-
   Capture a system's non-functional requirements (NFRs) — the measurable quality attributes it must
   satisfy: security, reliability/availability, performance, usability, scalability, compatibility,

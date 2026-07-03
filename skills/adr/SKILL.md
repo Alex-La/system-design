@@ -1,6 +1,5 @@
 ---
 name: adr
-disable-model-invocation: true
 description: >-
   Record architecturally significant decisions as Architecture Decision Records (ADRs) in MADR format,
   managed with log4brains (a browsable, searchable decision log + monorepo support). Use this whenever

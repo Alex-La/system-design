@@ -1,6 +1,5 @@
 ---
 name: c4
-disable-model-invocation: true
 description: >-
   Create and evolve interactive C4 software-architecture models as code using Structurizr DSL. Use this
   whenever the user wants to design or document system/software architecture, draw or update C4 diagrams

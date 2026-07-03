@@ -1,6 +1,5 @@
 ---
 name: workflow
-disable-model-invocation: true
 description: >-
   The system-design plugin's end-to-end methodology — the manifest that ties the whole family together.
   Run this when you are starting a feature and want the full disciplined flow: brainstorm a spec, turn it

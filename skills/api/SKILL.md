@@ -1,6 +1,5 @@
 ---
 name: api
-disable-model-invocation: true
 description: >-
   Document a module / SDK / library's public API as a stable, citable `design/api.md` **contract** —
   the exported surface and how you call it: an export inventory plus, per export, its signature,
